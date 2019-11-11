@@ -1,0 +1,11 @@
+go.property("start_color", vmath.vector4(0, 0, 0, 1))
+
+function init(self)
+	model.set_constant('#model', 'color', vmath.vector4(1, 1, 1, 0))
+	--go.set('#model', 'color', vmath.vector4(1, 1, 1, 0))
+	--go.set('#model', 'progress', 0.75)
+	--go.animate('#model', 'color', go.PLAYBACK_LOOP_PINGPONG, vmath.vector4(1, 1, 0, 1), go.EASING_LINEAR, 1)
+	--go.set('#model', 'start_color', self.start_color)
+	--go.set('#model', 'end_color', vmath.vector4(1, 0, 0, 1))
+	go.animate('#model', 'color', go.PLAYBACK_LOOP_PINGPONG, vmath.vector4(1, 1, 0, 1), go.EASING_LINEAR, 3)
+end
